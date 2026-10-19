@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EngNet</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#000000',
+                            orange: '#FF8D28',
+                            purple: '#8A38F5',
+                            white: '#FFFFFF',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased overflow-x-hidden">
+
+    <header class="bg-brand-black text-white flex justify-between items-center px-8 md:px-16 py-6 sticky top-0 z-50 w-full">
+        <a href="#home" class="flex items-center space-x-3">
+            <img src="assets/images/EngNet_Simbol_Flat.png" alt="Logo EngNet" class="h-10 w-auto">
+            <span class="text-white text-3xl font-bold tracking-tight">EngNet</span>
+        </a>
+        <nav class="hidden md:flex space-x-12 font-bold text-base tracking-wider">
+            <a href="#home" class="hover:text-brand-orange transition">HOME</a>
+            <a href="#sobre" class="hover:text-brand-orange transition">SOBRE NÓS</a>
+            <a href="#servicos" class="hover:text-brand-orange transition">SERVIÇOS</a>
+            <a href="#cases" class="hover:text-brand-orange transition">CASES</a>
+            <a href="#contato" class="hover:text-brand-orange transition">CONTATO</a>
+        </nav>
+    </header>
+
+    <main class="w-full">
+
+        <section id="home" class="bg-brand-black text-white px-8 md:px-16 py-20 md:py-32 flex flex-col md:flex-row items-center justify-between w-full">
+            <div class="md:w-1/2 space-y-8 text-left">
+                <h2 class="text-brand-orange font-bold text-base md:text-lg tracking-widest uppercase">SOMOS UMA EMPRESA JÚNIOR DE TECNOLOGIA</h2>
+                <h1 class="text-4xl md:text-6xl font-black leading-tight uppercase">SOLUÇÕES DE ENGENHARIA PARA SUPERAR NOVOS DESAFIOS</h1>
+                <p class="text-gray-300 text-lg md:text-xl leading-relaxed">Soluções de engenharia prontas para o uso, raramente resolvem todos os desafios do dia a dia. É por isso que criamos soluções personalizadas e focamos no desenvolvimento de maneira conjunta com o cliente.</p>
+                <p class="text-gray-300 text-lg md:text-xl leading-relaxed">Converse com os nossos consultores e garanta que a solução e tecnologia funcione para você (e não o contrário).</p>
+                <div class="pt-4">
+                    <a href="mailto:comercial@engnetconsultoria.com.br" class="inline-block bg-brand-purple text-white px-10 py-4 rounded-full font-bold text-lg hover:opacity-90 transition">Fale conosco</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-end mt-12 md:mt-0">
+                <img src="assets/images/EngNet_Simbol_3D.png" alt="Símbolo EngNet 3D" class="w-full max-w-lg object-contain">
+            </div>
+        </section>
+
+        <section id="servicos" class="px-8 md:px-16 py-28 bg-white w-full">
+            <div class="mb-20 text-left">
+                <p class="text-brand-orange font-bold text-lg uppercase tracking-wider">CONTE CONOSCO</p>
+                <h2 class="text-4xl md:text-6xl font-black text-black mt-2 uppercase tracking-tight">NOSSOS SERVIÇOS</h2>
+                <a href="#contato" class="inline-block mt-4 bg-brand-orange text-white px-8 py-3 rounded-full font-bold text-sm uppercase hover:opacity-90 transition">SAIBA MAIS</a>
+            </div>
+
+            <div class="space-y-24 w-full">
+                <div class="flex justify-center w-full">
+                    <div class="max-w-2xl text-center flex flex-col items-center">
+                        <img src="assets/icones/Hardware.png" alt="Soluções Personalizadas" class="h-32 w-32 md:h-44 md:w-44 object-contain mb-6">
+                        <h3 class="text-2xl md:text-4xl font-bold text-black mb-4">Soluções Personalizadas</h3>
+                        <p class="text-gray-600 text-lg md:text-xl leading-relaxed">Soluções que se adequam à sua necessidade, abrangemos a integração do hardware ao software para a implementação do projeto.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-24 w-full">
+                    <div class="text-center flex flex-col items-center">
+                        <img src="assets/icones/App.png" alt="Aplicativos" class="h-32 w-32 md:h-44 md:w-44 object-contain mb-6">
+                        <h3 class="text-2xl md:text-4xl font-bold text-black mb-4">Aplicativos</h3>
+                        <p class="text-gray-600 text-lg md:text-xl leading-relaxed">O desenvolvimento de aplicativos é destinado a novos empreendedores ou empresas que buscam oferecer experiências personalizadas para seus usuários, facilitando e automatizando processos para o uso intuitivo do cliente.</p>
+                    </div>
+
+                    <div class="text-center flex flex-col items-center">
+                        <img src="assets/icones/Site.png" alt="Sites" class="h-32 w-32 md:h-44 md:w-44 object-contain mb-6">
+                        <h3 class="text-2xl md:text-4xl font-bold text-black mb-4">Sites</h3>
+                        <p class="text-gray-600 text-lg md:text-xl leading-relaxed">Se torne visível na internet, divulgue a imagem da sua instituição para o público e potencialize sua prospecção passiva e conversões online.</p>
+                    </div>
+
+                    <div class="text-center flex flex-col items-center">
+                        <img src="assets/icones/Ideia.png" alt="Concepções Digitais" class="h-32 w-32 md:h-44 md:w-44 object-contain mb-6">
+                        <h3 class="text-2xl md:text-4xl font-bold text-black mb-4">Concepções Digitais</h3>
+                        <p class="text-gray-600 text-lg md:text-xl leading-relaxed">Verifique a viabilidade tecnológica do seu projeto e amadureça a sua ideia por meio da coleta de requisitos e prototipação.</p>
+                    </div>
+
+                    <div class="text-center flex flex-col items-center">
+                        <img src="assets/icones/Computer.png" alt="Sistemas Web" class="h-32 w-32 md:h-44 md:w-44 object-contain mb-6">
+                        <h3 class="text-2xl md:text-4xl font-bold text-black mb-4">Sistemas Web</h3>
+                        <p class="text-gray-600 text-lg md:text-xl leading-relaxed">Se adeque à todos os tipos de dispositivos por um sistema web que automatiza e organiza processos conforme sua personalização.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="sobre" class="px-8 md:px-16 py-28 bg-white w-full space-y-32">
+            <!-- Bloco 1: O Que Somos (Texto na esquerda, imagem centralizada na direita) -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-16 md:gap-24 w-full">
+                <div class="md:w-1/2 space-y-6 text-left">
+                    <p class="text-brand-orange font-bold text-lg md:text-xl uppercase tracking-wider">O que somos</p>
+                    <h2 class="text-4xl md:text-6xl font-black text-black leading-tight uppercase tracking-tight">EMPRESA JÚNIOR DE TECNOLOGIA</h2>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed">Uma empresa júnior é uma organização sem fins lucrativos composta por estudantes universitários que se dedicam a oferecer serviços de consultoria e desenvolvimento para empresas.</p>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed">A ideia principal da empresa júnior é proporcionar uma oportunidade para que os estudantes possam aplicar na prática os conhecimentos adquiridos na universidade e, ao mesmo tempo, ajudar empresas e organizações a solucionar problemas e aprimorar seus processos de negócio.</p>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed">Além disso, a empresa júnior também promove o desenvolvimento pessoal e profissional dos estudantes, que têm a oportunidade de desenvolver habilidades de liderança, trabalho em equipe, negociação, comunicação, entre outras competências importantes para o mercado de trabalho.</p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="assets/images/EngNet1.png" alt="Membro EngNet com a bandeira" class="w-full max-w-lg object-contain">
+                </div>
+            </div>
+
+            <!-- Bloco 2: Quem Somos (Imagem centralizada na esquerda, texto na direita) -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-16 md:gap-24 w-full">
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="assets/images/EngNet-2.png" alt="Membros da EngNet trabalhando" class="w-full max-w-lg object-contain">
+                </div>
+                <div class="md:w-1/2 space-y-6 text-left">
+                    <p class="text-brand-orange font-bold text-lg md:text-xl uppercase tracking-wider">Quem somos</p>
+                    <h2 class="text-4xl md:text-6xl font-black text-black leading-tight uppercase tracking-tight">ENGNET CONSULTORIA</h2>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed">Somos uma empresa júnior de tecnologia que se destaca por seu compromisso em fornecer soluções completas para seus clientes, através da aplicação das diferentes áreas de conhecimento dos cursos de Engenharia de Redes, Engenharia Elétrica, Engenharia de Software, Engenharia Mecatrônica e Engenharia e Ciência da Computação.</p>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed">Fundada em 1997, na Universidade de Brasília (UnB), a EngNet tem como objetivo oferecer vivência empresarial aos alunos, promovendo o desenvolvimento de habilidades e competências necessárias para a atuação no mercado de trabalho. Além disso, a empresa possui uma equipe comprometida, que busca sempre a transformação, o despertar do propósito e a concretização de sonhos de seus clientes.</p>
+                </div>
+            </div>
+
+            <!-- Missão, Visão e Valores -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 pt-12 w-full">
+                <div class="text-center flex flex-col items-center">
+                    <img src="assets/icones/EngNet_Simbol_Flat.png" alt="Missão" class="h-20 w-20 object-contain mb-6">
+                    <h3 class="text-4xl font-black text-brand-purple mb-4">Missão</h3>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed">Fomentar o empreendedorismo formando lideranças e trazendo vivência empresarial.</p>
+                </div>
+
+                <div class="text-center flex flex-col items-center">
+                    <img src="assets/icones/EngNet_Simbol_Flat.png" alt="Visão" class="h-20 w-20 object-contain mb-6">
+                    <h3 class="text-4xl font-black text-brand-purple mb-4">visão</h3>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed">Se consolidar como empresa protagonista e referência na qualidade de produtos de tecnologia.</p>
+                </div>
+
+                <div class="text-center flex flex-col items-center">
+                    <img src="assets/icones/EngNet_Simbol_Flat.png" alt="Valores" class="h-20 w-20 object-contain mb-6">
+                    <h3 class="text-4xl font-black text-brand-purple mb-4">valores</h3>
+                    <p class="text-gray-600 text-lg md:text-xl leading-relaxed">Colaboração, Aprendizado Constante, Comprometimento, Confiança e Sangue laranja.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cases" class="bg-brand-black text-white px-8 md:px-16 py-28 w-full">
+            <div class="mb-16 text-left">
+                <p class="text-brand-orange font-bold text-lg md:text-xl uppercase tracking-wider">NOSSOS</p>
+                <h2 class="text-4xl md:text-6xl font-black mt-1 uppercase tracking-tight">CASES</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 w-full max-w-full mx-auto">
+                <div class="bg-white text-black p-10 rounded-3xl flex flex-col justify-between shadow-2xl min-h-[620px]">
+                    <div class="space-y-6">
+                        <div class="h-48 flex items-center justify-center">
+                            <img src="assets/images/Frame.png" alt="Logo Viana Costa" class="max-h-full max-w-full object-contain">
+                        </div>
+                        <h3 class="text-2xl font-black uppercase text-black leading-snug">PLATAFORMA WEB: VIANA COSTA</h3>
+                        <p class="text-sm font-extrabold text-black uppercase tracking-wider">SISTEMAS WEB</p>
+                        <p class="text-gray-600 text-sm md:text-base font-semibold uppercase leading-relaxed">O VIANA COSTA É UM PREPARATÓRIO PARA COLÉGIOS MILITARES QUE RECEBEM ALUNOS DO 3º AO 9º ANO DE VÁRIAS ESCOLAS, PARA APRIMORAR EM EXCELÊNCIA AS DISCIPLINAS DE PORTUGUÊS E MATEMÁTICA, ATRAVÉS DE AULAS..</p>
+                    </div>
+                    <div class="pt-8">
+                        <a href="#contato" class="inline-block bg-brand-purple text-white px-8 py-3 rounded-full font-bold text-sm uppercase hover:opacity-90 transition shadow-md">SAIBA MAIS &gt;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white text-black p-10 rounded-3xl flex flex-col justify-between shadow-2xl min-h-[620px]">
+                    <div class="space-y-6">
+                        <div class="h-48 flex items-center justify-center">
+                            <img src="assets/images/emdia.png" alt="Logo Emdia" class="max-h-full max-w-full object-contain">
+                        </div>
+                        <h3 class="text-2xl font-black uppercase text-black leading-snug">APP: EMDIA</h3>
+                        <p class="text-sm font-extrabold text-black uppercase tracking-wider">APLICATIVO</p>
+                        <p class="text-gray-600 text-sm md:text-base font-semibold uppercase leading-relaxed">COM O ADVENTO DA PANDEMIA, A ROTINA DO MUNDO INTEIRO MUDOU. A NECESSIDADE DE ENCONTRAR OUTROS MEIOS DE SE EXERCITAR ALÉM DAS ACADEMIAS, IMPLICOU NA CRIAÇÃO DO EMDIA. CRIADO PELO GUILHERME FERNANDO..</p>
+                    </div>
+                    <div class="pt-8">
+                        <a href="#contato" class="inline-block bg-brand-purple text-white px-8 py-3 rounded-full font-bold text-sm uppercase hover:opacity-90 transition shadow-md">SAIBA MAIS &gt;</a>
+                    </div>
+                </div>
+
+                <div class="bg-white text-black p-10 rounded-3xl flex flex-col justify-between shadow-2xl min-h-[620px]">
+                    <div class="space-y-6">
+                        <div class="h-48 flex items-center justify-center">
+                            <img src="assets/images/concentro.png" alt="Logo Concentro" class="max-h-full max-w-full object-contain">
+                        </div>
+                        <h3 class="text-2xl font-black uppercase text-black leading-snug">SITE INSTITUCIONAL: CONCENTRO</h3>
+                        <p class="text-sm font-extrabold text-black uppercase tracking-wider">SITE</p>
+                        <p class="text-gray-600 text-sm md:text-base font-semibold uppercase leading-relaxed">A CONCENTRO É A FEDERAÇÃO DAS EMPRESAS JUNIORES DO DISTRITO FEDERAL. A FUNÇÃO DA FEDERAÇÃO É REPRESENTAR, EXPANDIR, DESENVOLVER, PRESTAR SUPORTE, ALINHAR, INTEGRAR E REGULAMENTAR AS EMPRESAS JUNIORES..</p>
+                    </div>
+                    <div class="pt-8">
+                        <a href="#contato" class="inline-block bg-brand-purple text-white px-8 py-3 rounded-full font-bold text-sm uppercase hover:opacity-90 transition shadow-md">SAIBA MAIS &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="grid grid-cols-1 md:grid-cols-2 w-full">
+            <div class="bg-white p-8 md:p-20 space-y-8">
+                <h2 class="text-3xl md:text-4xl font-black text-black uppercase">ENVIE UMA MENSAGEM!</h2>
+                <p class="text-gray-600 text-base md:text-lg font-semibold leading-relaxed">ENTRE EM CONTATO DIRETAMENTE COM UM DOS NOSSOS CONSULTORES E VEJA COMO PODE SER SIMPLES, RÁPIDO E BARATO RESOLVER O SEU PROBLEMA. ESTAMOS PRONTOS PARA TE ATENDER!</p>
+
+                <div class="space-y-6 pt-6">
+                    <div class="flex items-center space-x-4">
+                        <img src="assets/icones/Whatsapp.png" alt="WhatsApp" class="w-8 h-8 object-contain">
+                        <a href="https://wa.me/5561992137397" target="_blank" rel="noopener noreferrer" class="text-base md:text-lg font-semibold hover:text-brand-orange transition">(61) 99213-7397</a>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <img src="assets/icones/Email.png" alt="E-mail" class="w-8 h-8 object-contain">
+                        <a href="mailto:comercial@engnetconsultoria.com.br" class="text-base md:text-lg font-semibold hover:text-brand-orange transition">COMERCIAL@ENGNETCONSULTORIA.COM.BR</a>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <img src="assets/icones/Location.png" alt="Localização" class="w-8 h-8 object-contain mt-1">
+                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="text-base md:text-lg font-semibold hover:text-brand-orange transition">CAMPUS UNIVERSITÁRIO DARCY RIBEIRO - FACULDADE DE TECNOLOGIA - SG 11 AT 4/7 - ASA NORTE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-brand-orange p-8 md:p-20 flex items-center">
+                <form action="#" method="POST" class="w-full space-y-6">
+                    <div>
+                        <input type="text" name="nome" placeholder="NOME*" required class="w-full px-6 py-4 rounded-lg text-base text-black placeholder-gray-400 focus:outline-none">
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="E-MAIL*" required class="w-full px-6 py-4 rounded-lg text-base text-black placeholder-gray-400 focus:outline-none">
+                    </div>
+                    <div>
+                        <input type="tel" name="telefone" placeholder="TELEFONE*" required class="w-full px-6 py-4 rounded-lg text-base text-black placeholder-gray-400 focus:outline-none">
+                    </div>
+                    <div>
+                        <textarea name="assunto" placeholder="ASSUNTO*" rows="4" required class="w-full px-6 py-4 rounded-lg text-base text-black placeholder-gray-400 focus:outline-none"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="bg-brand-purple text-white px-10 py-4 rounded-xl font-bold text-base uppercase hover:opacity-90 transition">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
